@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>News Update</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/1.jpg" alt="Club Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="nav-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products & Services</a></li>
+        <li><a href="news.html" class="active">News Update</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Latest News</h1>
+    <article>
+      <h2>🔥 Samba Boys Win Regional Cup</h2>
+      <p>Our under-17 squad brought home the regional trophy after a thrilling 3-2 final!</p>
+    </article>
+    <article>
+      <h2>📢 New Training Camps</h2>
+      <p>We are launching new football training camps for kids aged 10–15 starting next month.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; ST10470855</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
+
+

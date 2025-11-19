@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Young Brazil Football Club – nurturing raw talent and developing future champions.">
+  <meta name="keywords" content="Football Club, Youth Football, Soccer Training, Samba Boys, Young Athletes">
+  <style>
+    /* Interactive Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 3px solid #ffdd00;
+    }
+    .gallery img:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/1.jpg" alt="Club Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar">
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products & Services</a></li>
+      <li><a href="news.html">News Update</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to Young Brazil Football Club "The Samba Boys"</h1>
+    <h2>Nurturing Raw Talent</h2>
+    <p class="home-message">
+      At Young Brazil Football Club, we believe every young player holds a spark of greatness. 
+      Through dedication, passion, and guidance, we nurture raw talent into champions on and off the field.
+    </p>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <img src="images/2.jpg" alt="Youth Training Session">
+      <img src="images/3.jpg" alt="Team Celebrations">
+      <img src="images/4.jpg" alt="Coach Guiding Players">
+      <img src="images/5.jpg" alt="Football Drills">
+    </div>
+
+    <!-- Video Below Gallery -->
+    <video controls>
+      <source src="images/7.mp4" type="video/mp4">
+    </video>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; ST10470855</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('sidebar');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

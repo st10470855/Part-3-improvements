@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Young Brazil Football Club – get in touch via email, phone, or visit our club location.">
+  <meta name="keywords" content="Contact Football Club, Club Email, Soccer Phone, Football Address, Youth Soccer Contact">
+  <style>
+    /* Form Styling */
+    .contact-form {
+      max-width: 500px;
+      margin: 20px auto;
+      background-color: rgba(255, 221, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #ffdd00;
+      border-radius: 5px;
+      background-color: #064420;
+      color: white;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #ffdd00;
+      color: #064420;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #fff;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/1.jpg" alt="Club Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="sidebar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products & Services</a></li>
+        <li><a href="news.html">News Update</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact & Registration</h1>
+    <h2>Get in Touch or Join the Club</h2>
+
+    <div class="contact-form">
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="Digits only">
+
+        <label for="message">Message / Registration Details:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+		<!-- EmailJS SDK --> <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> <script> (function(){ emailjs.init("eLfyxf7CJO8z4tbbv"); 7ZB0tWj1SUPJw-tqW })();
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; ST10470855</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('sidebar');
+      nav.classList.toggle('show');
+    }
+
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !phone || !message) {
+        alert('Please fill out all fields.');
+        return false;
+      }
+      const phonePattern = /^[0-9]{10,15}$/;
+      if (!phonePattern.test(phone)) {
+        alert('Please enter a valid phone number (10-15 digits).');
+        return false;
+      }
+      alert('Thank you for registering! We will contact you soon.');
+      return true;
+    }
+  </script>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d116231.46211013643!2d29.30737366647045!3d-24.442693584514306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1ec11fe6df93b891%3A0x68355b561970698e!2sR579%20Stand%2015%2C%20Mapatjakeng%2C%20Magatle%2C%200631!3m2!1d-24.455267499999998!2d29.424092299999998!5e0!3m2!1sen!2sza!4v1763557353879!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

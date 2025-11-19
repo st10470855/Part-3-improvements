@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b6623;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #064420;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+header .logo img {
+  width: 60px;
+  border-radius: 8px;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffdd00;
+  display: block;
+  z-index: 300;
+}
+
+/* Sidebar Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to bottom, #064420, #0b6623);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+  z-index: 200;
+}
+
+nav.show {
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ffdd00;
+  font-weight: bold;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: rgba(255, 221, 0, 0.2);
+  color: #fff;
+  border-left: 4px solid #ffdd00;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  transition: margin-left 0.3s ease;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ffdd00, #ffffff, #ffdd00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffdd00;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Video Styling */
+video {
+  border: 5px solid white;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #ffdd00;
+  color: #064420;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 200px;
+  }
+  nav a {
+    padding: 12px 15px;
+  }
+}
+
+
+

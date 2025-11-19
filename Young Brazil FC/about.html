@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/1.jpg" alt="Club Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="products.html">Products & Services</a></li>
+      <li><a href="news.html">News Update</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>About Young Brazil Football Club</h1>
+    <h2>We Care About Your Child’s Growth</h2>
+    <p class="about-message">
+      At Young Brazil Football Club, every young player is more than just a talent — they are part of our family.  
+      We provide a safe, nurturing environment where children can learn, play, and grow with confidence.  
+      Our experienced coaches focus not only on developing football skills but also on instilling discipline, teamwork, and respect.
+    </p>
+    <p class="about-message">
+      We understand that parents want the best for their children. That’s why we are committed to their safety, health, and personal development.  
+      From personalized guidance to emotional support, we are here to ensure your child thrives both on and off the field.
+    </p>
+    <p class="about-message">
+      Join us, and let’s nurture talent, build confidence, and create a brighter future together.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; ST10470855</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('sidebar');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
+
+
+
